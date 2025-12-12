@@ -3,6 +3,9 @@
 -- Add any additional options here
 
 vim.opt.wrap = true
+vim.opt.scroll.enabled = false
+
+vim.g.snacks_animate = false
 
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
 vim.g.lazyvim_python_lsp = "pyright"
