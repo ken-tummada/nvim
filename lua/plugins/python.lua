@@ -9,6 +9,7 @@ return {
               analysis = {
                 useLibraryCodeForTypes = false,
                 typeCheckingMode = "basic",
+                diagnosticMode = "workspace",
               },
             },
           },
