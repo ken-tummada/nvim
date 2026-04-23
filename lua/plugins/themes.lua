@@ -2,7 +2,7 @@ return {
   {
     "sainnhe/sonokai",
     lazy = false,
-    priority = 0,
+    priority = 1000,
     config = function()
       vim.g.sonokai_enable_italic = 1
       vim.g.sonokai_style = "andromeda"
@@ -11,6 +11,29 @@ return {
       vim.g.sonokai_diagnostic_virtual_text = "colored"
       vim.g.sonokai_disable_italic_comment = 1
     end,
+  },
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      no_italic = false,
+      styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        comments = {}, -- Change the style of comments
+        conditionals = { "italic" },
+        loops = {},
+        functions = { "italic" },
+        keywords = { "italic" },
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = { "italic" },
+        operators = {},
+        miscs = {}, -- Uncomment to turn off hard-coded styles
+      },
+    },
   },
   {
     "serhez/teide.nvim",
